@@ -5,7 +5,46 @@
     <atom:link href="http://example.com/feed.xml" rel="self" type="application/rss+xml"/>
     <link>http://example.com/</link>
     <description>Conor Flannigan is a software engineer living in Berkeley, CA filling his brain with knowledge at Hack Reactor.</description>
-    <pubDate>Mon, 16 Feb 2015 22:28:00 -0800</pubDate>
+    <pubDate>Wed, 25 Feb 2015 18:12:10 -0800</pubDate>
+    
+      <item>
+        <title>CS Reading List</title>
+        <link>http://example.com/2015/02/25/cs-reading-list.html</link>
+        <guid isPermaLink="true">http://example.com/2015/02/25/cs-reading-list.html</guid>
+        <description>&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;I’ve put together this list in an effort to organize my self-guided study of specific CS topics. It is not meant to be comprehensive in any way, but rather focuses on a select few topics that happen to have caught my interest. I’ve read just a few of the texts listed, but have plans to work through most of them eventually. Feel free to suggest any changes to the list.&lt;/p&gt;
+
+&lt;h3 id=&quot;lispscheme&quot;&gt;LISP/Scheme&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.goodreads.com/book/show/548914.The_Little_Schemer?&quot;&gt;The Little Schemer&lt;/a&gt; and sequels&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.goodreads.com/book/show/1119079.How_to_Design_Programs?from_search=true&quot;&gt;How to Design Programs (HTDP)&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.goodreads.com/book/show/43713.Structure_and_Interpretation_of_Computer_Programs?from_search=true&quot;&gt;Structure and Interpretation of Computer Programs (SICP)&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.goodreads.com/book/show/6905041-land-of-lisp?from_search=true&quot;&gt;Land of Lisp&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.goodreads.com/book/show/570933.Practical_Common_LISP?from_search=true&quot;&gt;Practical Common Lisp&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.goodreads.com/book/show/41803.On_Lisp?from_search=true&quot;&gt;On Lisp&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.goodreads.com/book/show/4004178-let-over-lambda?from_search=true&quot;&gt;Let Over Lambda&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.amazon.com/Paradigms-Artificial-Intelligence-Programming-Studies/dp/1558601910/ref=sr_1_1?ie=UTF8&amp;amp;qid=1424915418&amp;amp;sr=8-1&amp;amp;keywords=paradigms+of+ai+programming&quot;&gt;Paradigm’s of AI Programming&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;functional-programming--haskell&quot;&gt;Functional Programming / Haskell&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.goodreads.com/book/show/12169041-an-introduction-to-functional-programming-through-lambda-calculus?from_search=true&quot;&gt;An Introduction to Functional Programming through Lambda Calculus&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://learnyouahaskell.com/&quot;&gt;Learn You A Haskell&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.goodreads.com/book/show/475675.The_Haskell_Road_to_Logic_Maths_and_Programming_Second_Edition?from_search=true&quot;&gt;The Haskell Road to Logic, Maths, Programming&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;mathlogic&quot;&gt;Math/Logic&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.goodreads.com/book/show/192221.How_to_Solve_It?from_search=true&quot;&gt;How to Solve It&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.goodreads.com/book/show/194769.To_Mock_a_Mockingbird_and_Other_Logic_Puzzles?from_search=true&quot;&gt;To Mock A Mockingbird&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.goodreads.com/book/show/859122.Introduction_to_Logic?from_search=true&quot;&gt;Introduction to Logic&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.goodreads.com/book/show/24113.G_del_Escher_Bach?from_search=true&quot;&gt;Godel, Escher, Bach&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.goodreads.com/book/show/9206915-godel-s-proof?from_search=true&quot;&gt;Godel’s Proof&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.goodreads.com/book/show/558194.Naive_Set_Theory?from_search=true&quot;&gt;Naive Set Theory&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Wed, 25 Feb 2015 00:00:00 -0800</pubDate>
+      </item>
     
       <item>
         <title>Chapter One - Getting started at Hack Reactor</title>
