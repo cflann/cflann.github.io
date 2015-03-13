@@ -5,7 +5,78 @@
     <atom:link href="http://example.com/feed.xml" rel="self" type="application/rss+xml"/>
     <link>http://example.com/</link>
     <description>Conor Flannigan is a software engineer living in Berkeley, CA filling his brain with knowledge at Hack Reactor.</description>
-    <pubDate>Wed, 25 Feb 2015 18:12:10 -0800</pubDate>
+    <pubDate>Fri, 13 Mar 2015 14:48:13 -0700</pubDate>
+    
+      <item>
+        <title>Running your Ionic app on an Android device (OS X)</title>
+        <link>http://example.com/2015/03/13/running-ionic-app-on-android.html</link>
+        <guid isPermaLink="true">http://example.com/2015/03/13/running-ionic-app-on-android.html</guid>
+        <description>&lt;p&gt;While developing a mobile app, chances are you will eventually hit a point where you need to test things out on an actual device. Here’s a quick primer on how to get your Ionic app up and running on an android smartphone. &lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Note: this guide is intended for developers on OS X and it is assumed that you already have a stable/working Ionic app&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;step-1-install-the-java-development-kit-jdk-if-you-dont-have-it-already&quot;&gt;Step 1: Install the Java Development Kit (JDK) if you don’t have it already&lt;/h2&gt;
+
+&lt;p&gt;Go to &lt;a href=&quot;http://www.oracle.com/technetwork/java/javase/downloads/index.html&quot;&gt;Oracle’s download page&lt;/a&gt; and install the latest version of the JDK.&lt;/p&gt;
+
+&lt;p&gt;Afterward, I recommend you verify your version of Java &lt;a href=&quot;https://www.java.com/en/download/installed.jsp&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;step-2-install-the-android-sdk&quot;&gt;Step 2: Install the Android SDK&lt;/h2&gt;
+
+&lt;p&gt;Download the latest (zipped) SDK package &lt;a href=&quot;https://developer.android.com/sdk/index.html#Other&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Unzip the package and move the extracted folder to your desired location (I have a “Workspace” directory for things like this).&lt;/p&gt;
+
+&lt;h2 id=&quot;step-25-make-sure-ionic-can-access-your-android-development-tools&quot;&gt;Step 2.5: Make sure Ionic can access your android development tools&lt;/h2&gt;
+
+&lt;p&gt;If you try to build your ionic app for android now, it may give you an error saying “ANDROID_HOME” / &lt;code&gt;android&lt;/code&gt; are not defined… To fix this, add the freshly downloaded SDK to your environment by adding these lines to the “.bashrc” file located in your home directory (&lt;code&gt;/Users/[your_name]&lt;/code&gt;):&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;export ANDROID_HOME=&quot;&amp;lt;/path/to/android-sdk-macosx&amp;gt;&quot;
+export PATH=${PATH}:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;em&gt;Note: You should replace the text in angle brackets with the path to your copy of the SDK&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;step-3-install-the-relevant-android-sdk-packages&quot;&gt;Step 3: Install the relevant Android SDK packages&lt;/h2&gt;
+
+&lt;p&gt;Download and install the packages specifed on &lt;a href=&quot;https://developer.android.com/sdk/installing/adding-packages.html&quot;&gt;this page&lt;/a&gt;, as well as the “SDK Platform” package for Android version 21.&lt;/p&gt;
+
+&lt;h2 id=&quot;step-4-install-apache-ant&quot;&gt;Step 4: Install Apache Ant&lt;/h2&gt;
+
+&lt;p&gt;Use &lt;a href=&quot;http://brew.sh/&quot;&gt;homebrew&lt;/a&gt; to install Apache Ant with the following command:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;
+$ brew install ant
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;step-5-build-your-project&quot;&gt;Step 5: Build your project&lt;/h2&gt;
+
+&lt;p&gt;Navigate to the root directory of your project:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;
+$ cd &amp;lt;/path/to/ionic/project&amp;gt;
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Build it for android:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;
+$ ionic build android
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Plug in your device (making sure debugging is enabled on the device) and run your app on it by entering the following command to your OS X terminal:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;
+$ ionic run android
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Note: After you plug your device in, make sure you authorize your computer to debug the device (you should see a popup on the device)&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;step-6-profit&quot;&gt;Step 6: Profit!&lt;/h2&gt;
+
+&lt;p&gt;That’s it! You can now debug your app on physical devices.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 13 Mar 2015 00:00:00 -0700</pubDate>
+      </item>
     
       <item>
         <title>CS Reading List</title>

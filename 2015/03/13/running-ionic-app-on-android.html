@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+  <head>
+	<meta charset="utf-8">
+	<title>Running your Ionic app on an Android device (OS X) | Conor Flannigan</title>
+	<meta name="description" content="While developing a mobile app, chances are you will eventually hit a point where you need to test things out on an actual device. Here’s a quick primer on ho...">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!-- CSS -->
+	<link rel="stylesheet" href="/css/main.css">
+	
+	<!--Favicon-->
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	
+	<!-- Canonical -->
+	<link rel="canonical" href="http://example.com/2015/03/13/running-ionic-app-on-android.html">
+	
+	<!-- RSS -->
+	<link rel="alternate" type="application/atom+xml" title="Conor Flannigan" href="http://example.com/feed.xml" />
+	
+	<!-- Font Awesome -->
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+	
+	<!-- Google Fonts -->
+	<link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,700italic,400italic" rel="stylesheet" type="text/css">
+	
+	<!-- Google Analytics -->
+	
+</head>
+
+
+  <body>
+    <header class="site-header">
+
+	<div class="branding">
+		
+    <a href="/">
+      <img class="avatar" src="https://secure.gravatar.com/avatar/5fcfc346d883ff8baee77c38f5dd5d6b?s=100" alt=""/>
+    </a>
+		
+		
+		<h1 class="site-title">
+			<a href="/">Conor Flannigan</a>
+		</h1>
+	</div>
+	
+	<nav class="site-nav">
+		<ul>
+			
+				
+			
+				
+				<li>
+					<a class="page-link" href="/about/">About</a>
+				</li>
+				
+			
+				
+			
+				
+			
+				
+			
+
+			<!-- Social icons from Font Awesome, if enabled -->
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+	<a href="https://github.com/cflann" title="Follow on GitHub">
+		<i class="fa fa-fw fa-github"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		</ul>
+	</nav>
+	
+</header>
+
+
+    <div class="content">
+      <article class="feature-image">
+
+  <header style="background-image: url('/img/sample_feature_img.png')">
+    <h1 class="title">Running your Ionic app on an Android device (OS X)</h1>
+    
+    <p class="meta">
+    March 13, 2015
+    
+    </p>
+  </header>
+
+  <section class="post-content">
+    <p>While developing a mobile app, chances are you will eventually hit a point where you need to test things out on an actual device. Here’s a quick primer on how to get your Ionic app up and running on an android smartphone. </p>
+
+<p><em>Note: this guide is intended for developers on OS X and it is assumed that you already have a stable/working Ionic app</em></p>
+
+<h2 id="step-1-install-the-java-development-kit-jdk-if-you-dont-have-it-already">Step 1: Install the Java Development Kit (JDK) if you don’t have it already</h2>
+
+<p>Go to <a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">Oracle’s download page</a> and install the latest version of the JDK.</p>
+
+<p>Afterward, I recommend you verify your version of Java <a href="https://www.java.com/en/download/installed.jsp">here</a>.</p>
+
+<h2 id="step-2-install-the-android-sdk">Step 2: Install the Android SDK</h2>
+
+<p>Download the latest (zipped) SDK package <a href="https://developer.android.com/sdk/index.html#Other">here</a>.</p>
+
+<p>Unzip the package and move the extracted folder to your desired location (I have a “Workspace” directory for things like this).</p>
+
+<h2 id="step-25-make-sure-ionic-can-access-your-android-development-tools">Step 2.5: Make sure Ionic can access your android development tools</h2>
+
+<p>If you try to build your ionic app for android now, it may give you an error saying “ANDROID_HOME” / <code>android</code> are not defined… To fix this, add the freshly downloaded SDK to your environment by adding these lines to the “.bashrc” file located in your home directory (<code>/Users/[your_name]</code>):</p>
+
+<pre><code>export ANDROID_HOME="&lt;/path/to/android-sdk-macosx&gt;"
+export PATH=${PATH}:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
+</code></pre>
+
+<p><em>Note: You should replace the text in angle brackets with the path to your copy of the SDK</em></p>
+
+<h2 id="step-3-install-the-relevant-android-sdk-packages">Step 3: Install the relevant Android SDK packages</h2>
+
+<p>Download and install the packages specifed on <a href="https://developer.android.com/sdk/installing/adding-packages.html">this page</a>, as well as the “SDK Platform” package for Android version 21.</p>
+
+<h2 id="step-4-install-apache-ant">Step 4: Install Apache Ant</h2>
+
+<p>Use <a href="http://brew.sh/">homebrew</a> to install Apache Ant with the following command:</p>
+
+<p><code>
+$ brew install ant
+</code></p>
+
+<h2 id="step-5-build-your-project">Step 5: Build your project</h2>
+
+<p>Navigate to the root directory of your project:</p>
+
+<p><code>
+$ cd &lt;/path/to/ionic/project&gt;
+</code></p>
+
+<p>Build it for android:</p>
+
+<p><code>
+$ ionic build android
+</code></p>
+
+<p>Plug in your device (making sure debugging is enabled on the device) and run your app on it by entering the following command to your OS X terminal:</p>
+
+<p><code>
+$ ionic run android
+</code></p>
+
+<p><em>Note: After you plug your device in, make sure you authorize your computer to debug the device (you should see a popup on the device)</em></p>
+
+<h2 id="step-6-profit">Step 6: Profit!</h2>
+
+<p>That’s it! You can now debug your app on physical devices.</p>
+
+  </section>
+  
+</article>
+
+<!-- Disqus -->
+
+    </div>
+
+    
+<footer class="site-footer">
+	<p class="text">Powered by <a href="http://jekyllrb.com">Jekyll</a> with <a href="https://rohanchandra.github.io/project/type/">Type Theme</a>
+</p>
+</footer>
+
+  </body>
+  
+</html>
